@@ -6,8 +6,7 @@ function changePosition(config) {
     for (let index = 0; index < 10; index++) {
         if(d3.select("#spider" + index).attr("locked")!=1)
             d3.select("#spider" + index)
-              .transition()
-              //.duration(2000)  
+              .transition()  
               .attr("transform", "translate(" + setPosition(index, idConf).x + "," + setPosition(index, idConf).y + ")")
 
     }
